@@ -1,6 +1,8 @@
 console.log("Welcome to Quiz Game");
 console.log("Here's your first question");
 
+var counter = 0;
+
 var question1 = {
   line: "Which movie is this line from: 'You can\'t handle the truth.' \n1. A Few Good Men \n2. Spartacus \n3. I Know What You Did Last Summer \n4. Bambi",
   response: "1"
@@ -10,7 +12,8 @@ console.log(question1.line);
 
 var answer = prompt();
 if (answer === question1.response) {
-  console.log("That's correct!")
+  console.log("That's correct!");
+  counter++;
  } else {
-  console.log("Incorrect")  
+   console.log("Incorrect");  
 };    
