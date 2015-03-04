@@ -8,6 +8,21 @@ var question1 = {
   response: "1"
 };
 
+var question2 = {
+  line: "Which movie is this line from: 'There\'s no place like home.' \n1. All Dog's Go To Heaven \n2. Casablanca \n3. Wizard of Oz \n4. Gone With the Wind",
+  response: "3"
+};
+
+var question3 = {
+  line: "What manufacturer is responsible for this car: 'Camaro' \n1. Honda \n2. Ford \n3. Dodge \n4. Chevrolet",
+  response: "4"
+};
+
+var question4 = {
+  line: "Which planets fit between the Earth and the Moon? \n1. Mercury, Venus, Mars \n2. Jupiter, Saturn \n3. Jupiter \n4. All of them",
+  response: "4"
+};
+
 console.log(question1.line);
 
 var answer = prompt();
@@ -17,3 +32,4 @@ if (answer === question1.response) {
  } else {
    console.log("Incorrect");  
 };    
+
