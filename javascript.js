@@ -38,3 +38,5 @@ ask(question1);
 ask(question2);
 ask(question3);
 ask(question4);
+
+alert("You answered " + counter + " of 4 questions correctly, good for " + (counter / 4 * 100) + "%.");
