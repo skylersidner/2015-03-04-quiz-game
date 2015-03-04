@@ -23,13 +23,18 @@ var question4 = {
   response: "4"
 };
 
-console.log(question1.line);
+function ask (questionNum) {
+  console.log(questionNum.line);
+  var answer = prompt();
+  if (answer === questionNum.response) {
+    console.log("That's correct!");
+    counter++;
+   } else {
+     console.log("Incorrect");  
+  }    
+};
 
-var answer = prompt();
-if (answer === question1.response) {
-  console.log("That's correct!");
-  counter++;
- } else {
-   console.log("Incorrect");  
-};    
-
+ask(question1);
+ask(question2);
+ask(question3);
+ask(question4);
